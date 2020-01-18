@@ -1,7 +1,0 @@
-#!/bin/bash
-
-# Run build
-yarn build
-
-# Deploy on Firebase
-firebase deploy
