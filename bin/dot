@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Copies dot files over to GitHub repo
+cp ~/.bashrc ~/Documents/pets/dotfiles/bashrc
+cp ~/.vimrc ~/Documents/pets/dotfiles/vimrc
+cp ~/.tmux.conf ~/Documents/pets/dotfiles/tmux.conf
+
+# Pushes into dofiles repo
+pushd ~/Documents/pets/dotfiles
+
+# Adds changes, commits and pushes files up to GitHub
+git add .
+git commit -m "$1"
+git push
+
+# Exits the script
+exit 0
