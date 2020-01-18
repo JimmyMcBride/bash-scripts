@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# push into project directory
+pushd "$1"
+
+# open the directory in vs code
+code .
+
+# close the terminal
+exit 0
