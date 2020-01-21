@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Takes in git commit as argument
+
 # Copies dot files over to GitHub repo
 cp -r ~/bin ~/Documents/pets/bash-scripts
 

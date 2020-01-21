@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Set's the project's to remote github repo
+# Take's in remote ssh/http link as an argument
+
+git init
+
+git add .
+
+git commit -m "first commit"
+
+git remote add origin "$1"
+
+git push -u origin master

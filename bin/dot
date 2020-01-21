@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Takes in git commit as an argument
+
 # Copies dot files over to GitHub repo
 cp ~/.bashrc ~/Documents/pets/dotfiles/bashrc
 cp ~/.vimrc ~/Documents/pets/dotfiles/vimrc
