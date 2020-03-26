@@ -1,0 +1,22 @@
+#!/bin/bash
+
+print 'Select your terminal type:'
+PS3='terminal? '
+select term in \
+    'Givalt VT100' \
+    'Tsoris VT220' \
+    'Shande VT320' \
+    'Vey VT520'
+do
+    case $REPLY in
+        1 ) TERM=gl35a ;;
+        2 ) TERM=t2000 ;;
+        3 ) TERM=s531 ;;
+        4 ) TERM=vt99 ;;
+        * ) print 'invalid.' ;;
+    esac
+    if [[ -n $term ]]; then
+        print TERM is $TERM
+        break
+    fi
+done

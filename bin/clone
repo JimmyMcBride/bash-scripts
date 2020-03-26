@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Hi!
+
 git clone "$1"
 
 pushd "$2"

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Build current code
+yarn build
+
+# Publish changes
+yarn publish
+
+# Add all changes
+git add .
+
+# Commit all changes
+git commit -m "$1"
+
+# Push all changes
+git push

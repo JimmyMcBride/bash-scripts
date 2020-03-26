@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Takes in git commit as argument
+
+# Copies dot files over to GitHub repo
+cp -r ~/bin ~/Documents/pets/bash-scripts
+cp -r ~/local/python/bin ~/Documents/pets/bash-scripts/python-scripts
+cp -r ~/local/nodejs/bin ~/Documents/pets/bash-scripts/nodejs-scripts
+
+# Pushes into dofiles repo
+pushd ~/Documents/pets/bash-scripts
+
+# Adds changes, commits and pushes files up to GitHub
+git add .
+git commit -m "$1"
+git push
+
+# Exits the script
+exit

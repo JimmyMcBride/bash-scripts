@@ -1,0 +1,14 @@
+{
+  "name": "bin",
+  "version": "1.0.0",
+  "description": "all my scripts live here",
+  "main": "index.js",
+  "author": "Jimmy McBride",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "commander": "^4.1.0",
+    "inquirer": "^7.0.4",
+    "shelljs": "^0.8.3"
+  }
+}

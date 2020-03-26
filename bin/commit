@@ -1,0 +1,12 @@
+#!/bin/bash
+
+commit=$1
+files=("${@:2}")
+
+if [ $# -lt 2 ]; then
+    git add .
+else
+    git add ${files[*]}
+fi
+
+git commit -m "$commit"
